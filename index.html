@@ -105,9 +105,10 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction1_InText")+displayWordCount("Introduction2_InText");
-    const MainTextCount = displayWordCount("Main1")+displayWordCount("Main2");
+    const MainTextCount = displayWordCount("Main1")+displayWordCount("Main2")+displayWordCount("Main3")+displayWordCount("Main4")+displayWordCount("Main5")+displayWordCount("Main6")+displayWordCount("Main7");
+    const ConclusionCount = displayWordCount("Conclusion1")+displayWordCount("Conclusion2");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount+MainTextCount;
+    const totalWordCount = IntroductionCount+MainTextCount+ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
